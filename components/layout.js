@@ -1,18 +1,19 @@
 import Head from "next/head"
 import Header from "./header"
 import Footer from "./footer"
+import Adopcion from "./adopcion"
 
 
-export default function Layout({children, title = '', description = ''}) {
+export default function Layout({ children, title = '', description = '' }) {
   return (
     <>
-        <Head>
-            <title>{`Adopciones responsables - ${title}`}</title>
-            <meta name="description" content={description}/>
-        </Head>
-        <Header/>
-      {children}
-      <Footer/>
+      <Head>
+        <title>{`Patitas Felices`}</title>
+        <meta name="description" content={description} />
+      </Head>
+      <Header />
+      <Adopcion />
+      <Footer />
     </>
   )
 }
